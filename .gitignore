@@ -1,0 +1,17 @@
+# Ignore the target directory
+/target/
+
+# Ignore Cargo.lock if you want to exclude it (optional)
+Cargo.lock
+
+# Ignore any build artifacts (optional)
+*.rs.bk
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.swp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db

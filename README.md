@@ -1,2 +1,4 @@
-# rust_nfp_tools
-Rust tools to access the NFP
+# nfp_rsp_stub
+RSP server stub to debug NFP.
+
+set tdesc filename ./riscv64-arch.xml

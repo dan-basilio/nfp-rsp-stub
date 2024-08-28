@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE target SYSTEM "gdb-target.dtd">
+<target>
+  <architecture>riscv:rv64</architecture>
+  <feature name="org.gnu.gdb.riscv.cpu">
+    <!-- General Purpose Registers and Command and Status registers -->
+    <reg name="zero" bitsize="64" type="int" regnum="0"/>
+    <reg name="ra" bitsize="64" type="code_ptr" regnum="1"/>
+    <reg name="sp" bitsize="64" type="data_ptr" regnum="2"/>
+    <reg name="gp" bitsize="64" type="data_ptr" regnum="3"/>
+    <reg name="tp" bitsize="64" type="data_ptr" regnum="4"/>
+    <reg name="t0" bitsize="64" type="int" regnum="5"/>
+    <reg name="t1" bitsize="64" type="int" regnum="6"/>
+    <reg name="t2" bitsize="64" type="int" regnum="7"/>
+    <reg name="fp" bitsize="64" type="data_ptr" regnum="8"/>
+    <reg name="s1" bitsize="64" type="int" regnum="9"/>
+    <reg name="a0" bitsize="64" type="int" regnum="10"/>
+    <reg name="a1" bitsize="64" type="int" regnum="11"/>
+    <reg name="a2" bitsize="64" type="int" regnum="12"/>
+    <reg name="a3" bitsize="64" type="int" regnum="13"/>
+    <reg name="a4" bitsize="64" type="int" regnum="14"/>
+    <reg name="a5" bitsize="64" type="int" regnum="15"/>
+    <reg name="a6" bitsize="64" type="int" regnum="16"/>
+    <reg name="a7" bitsize="64" type="int" regnum="17"/>
+    <reg name="s2" bitsize="64" type="int" regnum="18"/>
+    <reg name="s3" bitsize="64" type="int" regnum="19"/>
+    <reg name="s4" bitsize="64" type="int" regnum="20"/>
+    <reg name="s5" bitsize="64" type="int" regnum="21"/>
+    <reg name="s6" bitsize="64" type="int" regnum="22"/>
+    <reg name="s7" bitsize="64" type="int" regnum="23"/>
+    <reg name="s8" bitsize="64" type="int" regnum="24"/>
+    <reg name="s9" bitsize="64" type="int" regnum="25"/>
+    <reg name="s10" bitsize="64" type="int" regnum="26"/>
+    <reg name="s11" bitsize="64" type="int" regnum="27"/>
+    <reg name="t3" bitsize="64" type="int" regnum="28"/>
+    <reg name="t4" bitsize="64" type="int" regnum="29"/>
+    <reg name="t5" bitsize="64" type="int" regnum="30"/>
+    <reg name="t6" bitsize="64" type="int" regnum="31"/>
+    <reg name="mstatus" bitsize="64" type="int" regnum="32"/>
+    <reg name="misa" bitsize="64" type="int" regnum="33"/>
+    <reg name="medeleg" bitsize="64" type="int" regnum="34"/>
+    <reg name="mideleg" bitsize="64" type="int" regnum="35"/>
+    <reg name="mie" bitsize="64" type="int" regnum="36"/>
+    <reg name="mtvec" bitsize="64" type="code_ptr" regnum="37"/>
+    <reg name="mscratch" bitsize="64" type="data_ptr" regnum="38"/>
+    <reg name="mepc" bitsize="64" type="code_ptr" regnum="39"/>
+    <reg name="mcause" bitsize="64" type="int" regnum="40"/>
+    <reg name="mtval" bitsize="64" type="int" regnum="41"/>
+    <reg name="mip" bitsize="64" type="int" regnum="42"/>
+    <reg name="dcsr" bitsize="64" type="int" regnum="43"/>
+    <reg name="pc" bitsize="64" type="code_ptr" regnum="44"/>
+    <reg name="dscratch0" bitsize="64" type="int" regnum="45"/>
+    <reg name="dscratch1" bitsize="64" type="int" regnum="46"/>
+    <reg name="mlmemprot" bitsize="64" type="int" regnum="47"/>
+    <reg name="mafstatus" bitsize="64" type="int" regnum="48"/>
+    <reg name="mcycle" bitsize="64" type="int" regnum="49"/>
+    <reg name="minstret" bitsize="64" type="int" regnum="50"/>
+    <reg name="cycle" bitsize="64" type="int" regnum="51"/>
+    <reg name="time" bitsize="64" type="int" regnum="52"/>
+    <reg name="instret" bitsize="64" type="int" regnum="53"/>
+    <reg name="mvendorid" bitsize="64" type="int" regnum="54"/>
+    <reg name="marchid" bitsize="64" type="int" regnum="55"/>
+    <reg name="mimpid" bitsize="64" type="int" regnum="56"/>
+    <reg name="mhartid" bitsize="64" type="int" regnum="57"/>
+  </feature>
+</target>
