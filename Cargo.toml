@@ -1,0 +1,20 @@
+[package]
+name = "nfp_debug_tools"
+version = "0.1.0"
+edition = "2021"
+default-run = "nfp-rsp"
+
+[dependencies]
+regex = "1.10.6"
+memmap2 = "0.9.4"
+fs2 = "0.4.3"
+clap = { version = "4.5.17", features = ["derive"] }
+clap-num = "1.1.1"
+bytemuck = { version = "1.18.0", features = ["extern_crate_alloc"] }
+bitfield = "0.17.0"
+ctrlc = "3.4.5"
+object = "0.36.4"
+
+[[bin]]
+name = "nfp-rsp"
+path = "src/bin/nfp_rsp.rs"
